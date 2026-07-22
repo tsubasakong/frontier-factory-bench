@@ -1,0 +1,25 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.tga binary
+*.ico binary
+*.wav binary
+*.ogg binary
+
+*.ase binary
+*.aseprite binary
+*.xcf binary
+*.psd binary
+*.kra binary
+*.blend binary
+*.clip binary
+*.afdesign binary
+*.afphoto binary
+*.ai binary
+
+*.zip binary

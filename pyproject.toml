@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "frontier-factory-bench"
+version = "0.0.0"
+description = "Open benchmark for industrial agents operating modded Factorio systems."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/tsubasakong/frontier-factory-bench"
+Issues = "https://github.com/tsubasakong/frontier-factory-bench/issues"
+
+[project.optional-dependencies]
+integration = [
+    "factorio-learning-environment @ git+https://github.com/JackHopkins/factorio-learning-environment@6439e18b7870770454cf91eb36b3d1e6412724f4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.2",
+    "ruff==0.15.6",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/frontier_factory_bench"]
+
+[tool.pytest.ini_options]
+addopts = ["--strict-config", "--strict-markers", "-ra"]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "RUF", "UP"]

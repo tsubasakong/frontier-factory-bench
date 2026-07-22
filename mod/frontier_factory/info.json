@@ -1,0 +1,11 @@
+{
+  "name": "frontier_factory",
+  "version": "0.0.0",
+  "title": "Frontier Factory Bench",
+  "author": "tsubasakong",
+  "description": "Minimal bootstrap mod for the Frontier Factory benchmark.",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.73"
+  ]
+}

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+
+# Factorio / benchmark artifacts (never commit game binaries or saves)
+saves/
+mods/*.zip
+factorio-dataloader*
+
+# Local env
+.env
+*.local

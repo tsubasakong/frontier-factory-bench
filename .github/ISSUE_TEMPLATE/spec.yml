@@ -1,0 +1,68 @@
+name: Specification
+description: Propose an implementation-ready feature or benchmark specification.
+title: "[SPEC] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Write the smallest implementation-ready specification that resolves the problem. State assumptions and unresolved blockers explicitly. Maintainers add `ready-for-agent` only after review and acceptance.
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: Describe the user, unmet need, evidence, and consequence of leaving it unresolved.
+      placeholder: As a ..., I need ..., because ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Describe the smallest end-to-end behavior that solves the stated problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_stories
+    attributes:
+      label: User Stories
+      description: List observable user, agent, evaluator, maintainer, and operator outcomes as applicable.
+      placeholder: |
+        1. As a ..., I want ..., so that ...
+        2. As a ..., I want ..., so that ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_decisions
+    attributes:
+      label: Implementation Decisions
+      description: Record fixed architecture, compatibility, data-model, dependency, and ownership decisions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing_decisions
+    attributes:
+      label: Testing Decisions
+      description: Define acceptance seams, passing evidence, negative cases, reproducibility rules, and required artifacts.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: Name tempting adjacent work that this specification deliberately excludes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: further_notes
+    attributes:
+      label: Further Notes
+      description: Add dependencies, risks, alternatives, references, follow-up specs, or unresolved blockers.
+    validations:
+      required: false
