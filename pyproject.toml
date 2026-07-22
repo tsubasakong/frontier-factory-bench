@@ -24,7 +24,7 @@ integration = [
 [dependency-groups]
 dev = [
     "pytest==9.1.1",
-    "ruff==0.15.6",
+    "ruff==0.15.22",
 ]
 
 [tool.hatch.metadata]
